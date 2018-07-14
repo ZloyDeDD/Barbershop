@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000000;
+    background-image: url(../img/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.inner-page {
+    color: #000000;
+    background-color: #faf7f4;
+    background-image: url(../img/pattern-light.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #000000;
+    border: none;
+}
+
+.button:hover, .button:focus, .button:active {
+    background-color: #663d15;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #000000;
+}
+
+.main-navigation ul {
+    list-style: none;
+}
+
+.main-navigation a {
+    color: #ffffff;
+}
+
+.site-navigation a:hover, .site-navigation a:focus, .user-navigation a:hover, .user-navigation a:focus {
+    background-color: #242424;
+}
+
+.site-navigation-current a {
+    border-bottom: 4px solid #ffffff;
+}
+
+.advantages-list {
+    list-style: none;
+}
+
+.advantages-item {
+    text-align: center;
+}
+
+.advantages-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-columns {
+    color: #000000;
+    background-color: #faf7f4;
+    background-image: url(../img/pattern-light.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.index-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-item time {
+    text-transform: none;
+}
+
+.gallery-content {
+    background-color: #e5e5e5;
+    border: 7px solid #ffffff;
+}
+
+.contacts-address {
+    font-style: normal;
+}
+
+.contacts-address a {
+    color: #000000;
+}
+
+.appointment-form-item input {
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+.appointment-form-item input:focus {
+    border-color: #663d15;
+}
+
+.page-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: #000000;
+}
+
+.breadcrumbs a:hover, .breadcrumbs a:focus {
+    text-decoration: underline;
+}
+
+.breadcrumbs-current {
+    color: #aba9a7;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 18px;
+}
+
+.filter-input:hover+label, .filter-input:focus+label {
+    color: #663d15;
+}
+
+.filter-input:disabled+label {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.catalog-item:hover {
+    box-shadow: 5px 0 25px rgba(0, 1, 1, 0.3);
+}
+
+.catalog-item h3 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.catalog-category {
+    text-transform: none;
+}
+
+.catalog-item-price b {
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #e5e5e5;
+}
+
+.pagination-list {
+    list-style: none;
+    line-height: 18px;
+}
+
+.pagination-list li {
+    background-color: #000000;
+}
+
+.pagination-list li:not(.current):hover, .pagination-list li:not(.current):focus, .pagination-list li:not(.current):active {
+    background-color: #663d15;
+}
+
+.pagination-list a {
+    color: #ffffff;
+}
+
+.pagination-list .current {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.product-photos img {
+    box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.product-photos ul {
+    list-style: none;
+}
+
+.product-article {
+    text-align: right;
+    color: #aeaeae;
+}
+
+.product-price b {
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #e5e5e5;
+}
+
+.product-description h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.product-set-list {
+    list-style: none;
+}
+
+.through-title {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.means h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.means-list {
+    list-style: none;
+}
+
+.prices h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.prices-table {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+.prices-table td {
+    border: 2px solid #000000;
+}
+
+.prices-table td.price {
+    text-align: center;
+}
+
+.about-us h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+/* Подвал сайта */
+
+.main-footer {
+    color: #ffffff;
+    background-color: #212121;
+    background-image: url(../img/pattern-dark.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.footer-address {
+    font-style: normal;
+}
+
+.footer-address a {
+    color: #ffffff;
+}
+
+.footer-address a:first-of-type {
+    text-decoration: underline;
+}
+
+.footer-address a:first-of-type:hover, .footer-address a:first-of-type:focus {
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright .button:hover, .footer-copyright .button:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.modal {
+    color: #000000;
+    background-color: #faf7f4;
+    background-image: url(../img/pattern-light.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.modal h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+}
+
+.login-form input:focus {
+    border-color: #663d15;
+}
+
+.login-checkbox:hover, .login-checkbox:focus {
+    color: #663d15;
+}
+
+.login-form .restore {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.login-form .restore:hover, .login-form .restore:focus {
+    text-decoration: none;
+}

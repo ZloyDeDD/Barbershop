@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="inner-page">
+
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a href="index.html">
+                <img src="img/logo.svg" alt="Логотип Барбершопа Бородинский" width="111" height="24">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li class="site-navigation-current"><a href="prices.html">Прайс-лист</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li><a href="#">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Прайс-лист</h1>
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-current">Прайс-лист</li>
+        </ul>
+
+        <h2 class="through-title">Истинно мужская классика</h2>
+
+        <section class="means">
+            <h3>Мы используем только лучшие средства:</h3>
+            <ul class="means-list">
+                <li>Baxter of California</li>
+                <li>Mr Natty</li>
+                <li>Suavecito</li>
+                <li>Malin+Goetz</li>
+            </ul>
+        </section>
+
+        <section class="prices">
+            <h3>Цены на услуги наших мастеров:</h3>
+            <table class="prices-table">
+                <tr>
+                    <td>Стрижка</td>
+                    <td class="price">1500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Стрижка бороды</td>
+                    <td class="price">500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Накрутка усов</td>
+                    <td class="price">350 ₽</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="about-us">
+            <h3>Несколько слов о нас:</h3>
+            <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+            <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+
+        <address class="footer-address">
+            Барбершоп «Бородинский» <br>
+            Адрес: Г. Санкт-петербург, Б. Конюшенная, Д. 19/8 <br>
+            <a href="map.html">Как нас найти?</a> <br>
+            Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a>
+        </address>
+
+        <div class="footer-social">
+            <b>Давайте дружить!</b>
+            <ul>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-copyright">
+            <b>Разработано:</b>
+            <a class="button" href="https://htmlacademy.ru/">HTML Academy</a>
+        </div>
+
+    </footer>
+
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="login">Логин</label>
+                <input id="login" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+                <label for="password">Пароль</label>
+                <input id="password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p>
+                <label class="login-checkbox">
+                    <input id="remember" type="checkbox" name="remember" checked>
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
+            </p>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map.jpg" width="766" height="560" alt="Барбершоп расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <button type="button">Закрыть</button>
+    </section>
+
+</body>
+
+</html>
