@@ -13,6 +13,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .inner-page {
     color: #000000;
     background-color: #faf7f4;
@@ -47,17 +53,48 @@ a {
     border: none;
 }
 
-.button:hover, .button:focus, .button:active {
+.button:hover, 
+.button:focus, 
+.button:active {
     background-color: #663d15;
 }
 
+.main-header {
+	margin-bottom: 75px;
+}
+
 .main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
     font-size: 16px;
     line-height: 20px;
-    background-color: #000000;
+}
+
+.main-header-logo {
+	order: 1;
+
+	width: 371px;
+	height: 155px;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	padding-bottom: 60px;
+
+	background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .main-navigation ul {
+	margin: 0;
+	padding: 0;
+
     list-style: none;
 }
 
@@ -65,7 +102,18 @@ a {
     color: #ffffff;
 }
 
-.site-navigation a:hover, .site-navigation a:focus, .user-navigation a:hover, .user-navigation a:focus {
+.site-navigation {
+	width: 620px;
+}
+
+.user-navigation {
+	width: 300px;
+}
+
+.site-navigation a:hover, 
+.site-navigation a:focus, 
+.user-navigation a:hover, 
+.user-navigation a:focus {
     background-color: #242424;
 }
 
