@@ -121,11 +121,22 @@ a {
     border-bottom: 4px solid #ffffff;
 }
 
+.advantages {
+    margin-bottom: 80px;
+}
+
 .advantages-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
 .advantages-item {
+    width: 300px;
+
     text-align: center;
 }
 
@@ -135,11 +146,24 @@ a {
 }
 
 .index-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding: 50px 80px;
+
     color: #000000;
     background-color: #faf7f4;
     background-image: url(../img/pattern-light.jpg);
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.index-columns section:first-child {
+    width: 380px;
+}
+
+.index-columns section:last-child {
+    width: 300px;
 }
 
 .index-columns h2 {
@@ -343,6 +367,9 @@ a {
 /* Подвал сайта */
 
 .main-footer {
+    margin-top: 65px;
+    padding: 60px 0;
+
     color: #ffffff;
     background-color: #212121;
     background-image: url(../img/pattern-dark.jpg);
@@ -350,7 +377,14 @@ a {
     background-repeat: repeat;
 }
 
+.main-footer .container {
+    display: flex;
+}
+
 .footer-address {
+    margin-right: 60px;
+    width: 320px;
+
     font-style: normal;
 }
 
@@ -367,10 +401,15 @@ a {
 }
 
 .footer-social {
+    width: 180px;
+
     text-align: center;
 }
 
 .footer-social ul {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -379,6 +418,9 @@ a {
 }
 
 .footer-copyright {
+    margin-left: auto;
+    width: 140px;
+
     text-align: center;
 }
 
@@ -388,6 +430,7 @@ a {
 }
 
 .modal {
+    display: none; /*ВРЕМЕННО*/
     color: #000000;
     background-color: #faf7f4;
     background-image: url(../img/pattern-light.jpg);
