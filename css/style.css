@@ -407,21 +407,46 @@ a {
 }
 
 .through-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 70px;
+
     font-size: 48px;
     line-height: 48px;
     text-align: center;
 }
 
+.catalog-columns.means.prices {
+    margin-bottom: 65px;
+}
+
+.means {
+    width: 240px;
+}
+
 .means h3 {
+    margin: 0;
+    padding: 0;
+
     font-size: 24px;
     line-height: 30px;
 }
 
 .means-list {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
+.prices {
+    width: 460px;
+}
+
 .prices h3 {
+    margin: 0;
+    padding: 0;
+    
     font-size: 24px;
     line-height: 30px;
 }
@@ -439,10 +464,29 @@ a {
     text-align: center;
 }
 
+.about-us {
+    margin-top: 65px;
+}
+
 .about-us h3 {
+    margin: 0;
+    padding: 0;
+
     font-size: 24px;
     line-height: 30px;
 }
+
+.catalog-columns .about-us-text {
+    width: 380px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-columns .about-us-text:nth-child(2n) {
+    margin-right: 80px;
+}
+
 /* Подвал сайта */
 
 .main-footer {
