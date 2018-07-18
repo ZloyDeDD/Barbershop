@@ -81,7 +81,7 @@ a {
 
 .main-navigation-wrapper {
 	width: 100%;
-	padding-bottom: 60px;
+	margin-bottom: 60px;
 
 	background-color: #000000;
 }
@@ -107,7 +107,7 @@ a {
 }
 
 .user-navigation {
-	width: 300px;
+	width: 140px;
 }
 
 .site-navigation a:hover, 
@@ -119,6 +119,29 @@ a {
 
 .site-navigation-current a {
     border-bottom: 4px solid #ffffff;
+}
+
+.inner-page .main-header {
+    margin-bottom: 55px;
+
+    background-color: #000000;
+}
+
+.inner-page .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.inner-page .main-header-logo {
+    order: 0;
+
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+}
+
+.inner-page .user-navigation {
+    margin-left: auto;
 }
 
 .advantages {
@@ -203,11 +226,19 @@ a {
 }
 
 .page-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
     font-size: 30px;
     line-height: 42px;
 }
 
 .breadcrumbs {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 55px;
+
     list-style: none;
 }
 
@@ -223,16 +254,34 @@ a {
     color: #aba9a7;
 }
 
+.shop-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    width: 220px;
+}
+
 .filter fieldset {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+
     border: none;
 }
 
 .filter legend {
+    margin-bottom: 30px;
+
     font-size: 24px;
     line-height: 30px;
 }
 
 .filter ul {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
     line-height: 18px;
 }
@@ -246,13 +295,31 @@ a {
     opacity: 0.3;
 }
 
+.catalog {
+    width: 700px;
+}
+
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+
     list-style: none;
 }
 
 .catalog-item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+
     background-color: #ffffff;
     box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -277,6 +344,10 @@ a {
 }
 
 .pagination-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
     line-height: 18px;
 }
@@ -375,6 +446,10 @@ a {
     background-image: url(../img/pattern-dark.jpg);
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+    margin-top: 50px;
 }
 
 .main-footer .container {
