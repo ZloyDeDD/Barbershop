@@ -254,7 +254,7 @@ a {
     color: #aba9a7;
 }
 
-.shop-columns {
+.catalog-columns {
     display: flex;
     justify-content: space-between;
 }
@@ -369,6 +369,10 @@ a {
     background-color: #ffffff;
 }
 
+.product-photos {
+    width: 460px;
+}
+
 .product-photos img {
     box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
@@ -387,6 +391,10 @@ a {
     vertical-align: middle;
 
     background-color: #e5e5e5;
+}
+
+.product-description {
+    width: 390px;
 }
 
 .product-description h3 {
