@@ -209,6 +209,8 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-item h3 {
+    margin: 0;
+
     font-size: 30px;
     line-height: 42px;
 }
