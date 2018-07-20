@@ -31,16 +31,27 @@ a {
     text-decoration: none;
 }
 
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
+img {
+    width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -99,15 +110,49 @@ a {
 }
 
 .main-navigation a {
+    display: block;
+    padding: 25px 20px;
+
     color: #ffffff;
 }
 
 .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
 	width: 620px;
 }
 
 .user-navigation {
-	width: 140px;
+    display: flex;
+	max-width: 140px;
+}
+
+.user-navigation .login-link {
+    position: relative;
+    padding-left: 50px;
+}
+
+.user-navigation .login-link::before {
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 24px;
+
+    width: 15px;
+    height: 15px;
+    
+    background-image: url("../img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
+}
+
+.user-navigation .login-link:hover::before,
+.user-navigation .login-link:focus::before,
+.user-navigation .login-link:active::before {
+    opacity: 1;
 }
 
 .site-navigation a:hover, 
@@ -356,7 +401,9 @@ a {
     background-color: #000000;
 }
 
-.pagination-list li:not(.current):hover, .pagination-list li:not(.current):focus, .pagination-list li:not(.current):active {
+.pagination-list li:not(.current):hover, 
+.pagination-list li:not(.current):focus, 
+.pagination-list li:not(.current):active {
     background-color: #663d15;
 }
 
