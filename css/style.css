@@ -890,6 +890,8 @@ input[type="radio"].visually-hidden {
 }
 
 .through-title {
+    position: relative;
+    
     margin: 0;
     padding: 0;
     margin-bottom: 70px;
@@ -897,6 +899,32 @@ input[type="radio"].visually-hidden {
     font-size: 48px;
     line-height: 48px;
     text-align: center;
+}
+
+.through-title::before {
+    content: '';
+    
+    position: absolute;
+    top: 50%;
+    left: 0;
+    
+    width: 160px;
+    height: 2px;
+    
+    background-color: #000000;
+}
+
+.through-title::after {
+    content: '';
+    
+    position: absolute;
+    top: 50%;
+    right: 0;
+    
+    width: 160px;
+    height: 2px;
+    
+    background-color: #000000;
 }
 
 .catalog-columns.means.prices {
@@ -917,28 +945,32 @@ input[type="radio"].visually-hidden {
 }
 
 .means-list {
-    position: relative;
-    
     margin: 0;
     padding: 0;
-    padding-left: 30px;
 
     list-style: none;
 }
 
 .means-list li {
+    position: relative;
+    padding-left: 30px;
+    
     margin-bottom: 17px;
 }
 
-.means-list li::after {
+.means-list li::before {
     content: "";
     
     position: absolute;
+    top: 7px;
+    left: 2px;
     
     width: 8px;
     height: 8px;
     
     background-color: #000000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .means-list li:last-child {
@@ -951,18 +983,24 @@ input[type="radio"].visually-hidden {
 
 .prices h3 {
     margin: 0;
-    padding: 0;
+    margin-bottom: 30px;
+    width: 220px;
     
     font-size: 24px;
     line-height: 30px;
 }
 
 .prices-table {
+    width: 100%;
+    
     border: 2px solid #000000;
     border-collapse: collapse;
 }
 
 .prices-table td {
+    padding: 8px 17px;
+    width: 50%;
+    
     border: 2px solid #000000;
 }
 
@@ -976,21 +1014,21 @@ input[type="radio"].visually-hidden {
 
 .about-us h3 {
     margin: 0;
-    padding: 0;
+    margin-bottom: 23px;
 
     font-size: 24px;
     line-height: 30px;
 }
 
 .catalog-columns .about-us-text {
-    width: 380px;
-
     margin: 0;
     padding: 0;
+    
+    width: 385px;
 }
 
 .catalog-columns .about-us-text:nth-child(2n) {
-    margin-right: 80px;
+    margin-right: 75px;
 }
 
 /* Подвал сайта */
