@@ -450,11 +450,42 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-bottom: 55px;
 
     list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+    
+    margin-right: 40px;
+}
+
+.breadcrumbs li::after {
+    content: "";
+    
+    position: absolute;
+    top: 7px;
+    right: -25px;
+    
+    width: 8px;
+    height: 8px;
+    
+    background-color: #000000;
+    
+    -webkit-transform: rotate(45deg);
+    
+    transform: rotate(45deg);
 }
 
 .breadcrumbs a {
@@ -466,7 +497,13 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs-current {
+    margin-right: 0;
+    
     color: #aba9a7;
+}
+
+.breadcrumbs-current::after {
+    display: none;
 }
 
 .catalog-columns {
@@ -490,6 +527,10 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
+.filter fieldset:last-of-type{
+    margin-bottom: 45px;
+}
+
 .filter legend {
     margin-bottom: 30px;
 
@@ -503,6 +544,23 @@ input[type="radio"].visually-hidden {
 
     list-style: none;
     line-height: 18px;
+}
+
+.filter-option {
+    margin-bottom: 25px;
+    padding-left: 45px;
+}
+
+.filter-option label {
+    position: relative;
+    
+    display: block;
+    
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .filter-input:hover+label, .filter-input:focus+label {
