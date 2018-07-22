@@ -734,7 +734,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
 }
 
-.pagination-item {
+.pagination-list li {
     margin-right: 7px;
     
     background-color: #000000;
@@ -747,10 +747,13 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list a {
+    display: block;
+    padding: 10px 19px;
+    
     color: #ffffff;
 }
 
-.pagination-list .current {
+.pagination-item-current a {
     color: #000000;
     background-color: #ffffff;
 }
@@ -797,7 +800,7 @@ input[type="radio"].visually-hidden {
     color: #aeaeae;
 }
 
-.product-text {
+.product-description .product-text {
     margin-bottom: 38px;
 }
 
@@ -829,6 +832,9 @@ input[type="radio"].visually-hidden {
 }
 
 .product-description h3 {
+    margin: 0;
+    margin-bottom: 27px;
+    
     font-size: 24px;
     line-height: 30px;
 }
@@ -856,7 +862,31 @@ input[type="radio"].visually-hidden {
 }
 
 .product-set-list {
+    margin: 0;
+    padding: 0;
+    
     list-style: none;
+}
+
+.product-set-list li {
+	position: relative;
+    
+    padding-left: 23px;
+}
+
+.product-set-list li::before {
+    content: "";
+    
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    
+    width: 8px;
+    height: 8px;
+    
+    background-color: #000000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .through-title {
@@ -880,16 +910,39 @@ input[type="radio"].visually-hidden {
 .means h3 {
     margin: 0;
     padding: 0;
+    margin-bottom: 30px;
 
     font-size: 24px;
     line-height: 30px;
 }
 
 .means-list {
+    position: relative;
+    
     margin: 0;
     padding: 0;
+    padding-left: 30px;
 
     list-style: none;
+}
+
+.means-list li {
+    margin-bottom: 17px;
+}
+
+.means-list li::after {
+    content: "";
+    
+    position: absolute;
+    
+    width: 8px;
+    height: 8px;
+    
+    background-color: #000000;
+}
+
+.means-list li:last-child {
+    margin-bottom: 0;
 }
 
 .prices {
