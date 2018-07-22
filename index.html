@@ -72,11 +72,13 @@
 
             <section class="gallery">
                 <h2>Фотогалерея</h2>
-                <figure class="gallery-content">
-                    <a href="#"><img src="img/interior.jpg" alt="Интерьер" width="286" height="164"></a>
-                </figure>
-                <button class="button">Назад</button>
-                <button class="button">Вперед</button>
+                <div class="gallery-container">
+                    <figure class="gallery-content">
+                        <a href="#"><img src="img/interior.jpg" alt="Интерьер" width="286" height="164"></a>
+                    </figure>
+                    <button class="button" disabled>Назад</button>
+                    <button class="button">Вперед</button>
+                </div>
             </section>
         </div>
 
@@ -97,7 +99,7 @@
 
             <section class="appointment">
                 <h2>Записаться</h2>
-                <p>Укажите желаемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
+                <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
                 <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
                     <p class="appointment-form-item">
                         <label for="date">Дата</label>
