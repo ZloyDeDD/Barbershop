@@ -764,22 +764,69 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
+.footer-social b {
+    display: block;
+    margin-bottom: 15px;
+}
+
 .footer-social ul {
-    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
     padding: 0;
+    
+    width: 141px;
 
     list-style: none;
 }
 
 .social-button {
-    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    
+    background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+    fill: #000000;
 }
 
 .footer-copyright {
     margin-left: auto;
-    width: 140px;
+    width: 145px;
 
     text-align: center;
+}
+
+.footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-copyright .button {
+	display: block;
+    margin-right: 0;
 }
 
 .footer-copyright .button:hover, .footer-copyright .button:focus {
