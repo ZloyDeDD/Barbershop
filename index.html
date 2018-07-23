@@ -168,15 +168,15 @@
 
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
-        <p>Введите пожалуйста свой логин и пароль</p>
+        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
-                <label for="login">Логин</label>
-                <input id="login" type="text" name="login" placeholder="Логин">
+                <label class="visually-hidden" for="login">Логин</label>
+                <input class="login-icon-user" id="login" type="text" name="login" placeholder="Логин">
             </p>
             <p>
-                <label for="password">Пароль</label>
-                <input id="password" type="password" name="password" placeholder="Пароль">
+                <label class="visually-hidden" for="password">Пароль</label>
+                <input class="login-icon-password" id="password" type="password" name="password" placeholder="Пароль">
             </p>
             <p>
                 <label class="login-checkbox">
@@ -188,7 +188,7 @@
             <a class="restore" href="#">Я забыл пароль!</a>
             <button class="button" type="submit">Войти</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
     <section class="modal modal-map">

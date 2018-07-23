@@ -1146,12 +1146,15 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright .button:hover, .footer-copyright .button:focus {
     color: #000000;
+    
     background-color: #ffffff;
 }
 
 .modal {
-    display: none; /*ВРЕМЕННО*/
+    position: fixed;
+    
     color: #000000;
+    
     background-color: #faf7f4;
     background-image: url(../img/pattern-light.jpg);
     background-position: 0 0;
@@ -1159,20 +1162,104 @@ input[type="radio"].visually-hidden {
 }
 
 .modal h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    
     font-size: 30px;
     line-height: 42px;
 }
 
-.login-form input[type="text"], .login-form input[type="password"] {
+.modal-description {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.modal-login {
+    top: 120px;
+    left: 50%;
+    
+    margin-left: -230px;
+    padding: 50px 80px;
+	width: 300px;
+    
+    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -33px;
+    
+    width: 19px;
+    height: 19px;
+    
+    background-color: transparent;
+    border: 0;
+    
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+    
+    position: absolute;
+    top: 8px;
+    left: 0;
+    
+    width: 19px;
+    height: 3px;
+    
+    background-color: #d0d0d0;
+}
+
+.modal-close::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.login-form p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"], 
+.login-form input[type="password"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    padding-right: 40px;
+    width: 100%;
+    
     font: inherit;
     color: #000000;
     text-transform: uppercase;
+    
     background-color: #f9f6f3;
     border: 2px solid #000000;
 }
 
 .login-form input:focus {
     border-color: #663d15;
+}
+
+.login-icon-user {
+  background-image: url("../img/user.svg");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+.login-icon-password {
+  background-image: url("../img/lock.svg");
+  background-position: 270px center;
+  background-repeat: no-repeat;
 }
 
 .login-checkbox:hover, .login-checkbox:focus {
