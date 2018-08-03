@@ -68,6 +68,8 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     background-color: #000000;
     border: none;
+    
+    cursor: pointer;
 }
 
 .button:hover, 
@@ -1153,6 +1155,8 @@ input[type="radio"].visually-hidden {
 .modal {
     position: fixed;
     
+    display: none;
+    
     color: #000000;
     
     background-color: #faf7f4;
@@ -1273,4 +1277,82 @@ input[type="radio"].visually-hidden {
 
 .login-form .restore:hover, .login-form .restore:focus {
     text-decoration: none;
+}
+
+.login-form .login-help {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.login-checkbox {
+	position: relative;
+    
+    padding-left: 30px;
+    
+    cursor: pointer;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 18px;
+    height: 18px;
+    
+    border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    
+    width: 16px;
+    height: 2px;
+    
+    background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.login-form .button {
+    width: 100%;
+    margin-right: 0;
+}
+
+.modal-map {
+	top: 50%;
+    left: 50%;
+    
+    margin-left: -390px;
+    margin-top: -287px;
+    width: 780px;
+    height: 574px;
+    
+    border: 7px solid white;
 }

@@ -178,14 +178,14 @@
                 <label class="visually-hidden" for="password">Пароль</label>
                 <input class="login-icon-password" id="password" type="password" name="password" placeholder="Пароль">
             </p>
-            <p>
+            <p class="login-help">
                 <label class="login-checkbox">
-                    <input id="remember" type="checkbox" name="remember" checked>
+                    <input class="visually-hidden" id="remember" type="checkbox" name="remember" checked>
                     <span class="checkbox-indicator"></span>
                     Запомните меня
                 </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
             </p>
-            <a class="restore" href="#">Я забыл пароль!</a>
             <button class="button" type="submit">Войти</button>
         </form>
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -194,7 +194,7 @@
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/map.jpg" width="766" height="560" alt="Барбершоп расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <button type="button">Закрыть</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
 </body>
