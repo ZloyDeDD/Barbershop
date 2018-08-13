@@ -1023,6 +1023,33 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
+.inner-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+    width: 460px;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+    margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+    margin-bottom: 0;
+}
+
+.inner-colums > h2:first-child {
+    width: 460px;
+}
+
 /* Подвал сайта */
 
 .main-footer {
