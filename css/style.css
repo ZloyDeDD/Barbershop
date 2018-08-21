@@ -1046,10 +1046,16 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0;
 }
 
-.inner-colums > h2:first-child {
+.inner-columns > h2:first-child {
     width: 460px;
+    margin-top: 0;
+    margin-right: 460px;
+    margin-right: calc(100% - 460px);
 }
 
+.short-text {
+    padding-right: 80px;
+}
 /* Подвал сайта */
 
 .main-footer {
