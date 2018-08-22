@@ -1176,9 +1176,9 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-    position: fixed;
-    
     display: none;
+
+    position: fixed;
     
     color: #000000;
     
@@ -1212,6 +1212,18 @@ input[type="radio"].visually-hidden {
     -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-map {
+    top: 50%;
+    left: 50%;
+    
+    margin-left: -390px;
+    margin-top: -287px;
+    width: 780px;
+    height: 574px;
+    
+    border: 7px solid white;
 }
 
 .modal-close {
@@ -1250,6 +1262,10 @@ input[type="radio"].visually-hidden {
 .modal-close::after {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
+
+.modal-show {
+    display: block;
 }
 
 .login-form p {
@@ -1366,16 +1382,4 @@ input[type="radio"].visually-hidden {
 .login-form .button {
     width: 100%;
     margin-right: 0;
-}
-
-.modal-map {
-	top: 50%;
-    left: 50%;
-    
-    margin-left: -390px;
-    margin-top: -287px;
-    width: 780px;
-    height: 574px;
-    
-    border: 7px solid white;
 }
