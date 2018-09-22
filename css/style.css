@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-    margin-bottom: 75px;
+    margin-bottom: 44px;
 }
 
 .main-navigation {
@@ -120,7 +120,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation-wrapper {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 37px;
 
     background-color: #000000;
 }
@@ -251,7 +251,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
 }
 
 .advantages-list {
@@ -277,7 +277,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
 
     font-size: 30px;
     line-height: 42px;
@@ -315,7 +315,7 @@ input[type="radio"].visually-hidden {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 35px;
-    padding: 50px 80px;
+    padding: 45px 81px;
 
     color: #000000;
     background-color: #faf7f4;
@@ -336,10 +336,10 @@ input[type="radio"].visually-hidden {
 
 .index-columns h2 {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
     
     font-size: 30px;
-    line-height: 42px;
+    line-height: 45px;
 }
 
 .news-list {
