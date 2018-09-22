@@ -93,7 +93,7 @@
                 <p>
                     Время работы:<br> Пн—Пт: с 10:00 до 22:00<br> Сб—Вс: с 10:00 до 19:00
                 </p>
-                <a class="button" href="map.html">Как проехать</a>
+                <a class="button contacts-button-map" href="map.html">Как проехать</a>
                 <a class="button" href="contacts.html">Обратная связь</a>
             </section>
 
@@ -193,28 +193,12 @@
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="560" allowfullscreen></iframe>
         <img src="img/map.jpg" width="766" height="560" alt="Барбершоп расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
-
-    <script>
-        var link = document.querySelector(".login-link");
-        var popup = document.querySelector(".modal-login");
-        var close = document.querySelector(".modal-close");
-        var login = popup.querySelector("[name=login]");
-
-        link.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-            login.focus();
-        });
-
-        close.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-        });
-    </script>
-
+	
+	<script src="js/script.js"></script>
 </body>
 
 </html>

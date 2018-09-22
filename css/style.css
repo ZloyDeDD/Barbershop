@@ -1175,6 +1175,46 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
     display: none;
 
@@ -1226,6 +1266,22 @@ input[type="radio"].visually-hidden {
     border: 7px solid white;
 }
 
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+
+    border: none;
+}
+
+.modal-map img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    margin: 0;
+}
+
 .modal-close {
     position: absolute;
     top: 0;
@@ -1266,6 +1322,12 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
     display: block;
+
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 .login-form p {
