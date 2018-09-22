@@ -950,7 +950,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-content td {
-    padding: 10px 15px;
+    padding: 10px 17px;
 
     border: 2px solid #000000;
 }
@@ -1049,7 +1049,7 @@ input[type="radio"].visually-hidden {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
-    margin: 60px 0;
+    margin: 37px 0;
 }
 
 .inner-column-left,
