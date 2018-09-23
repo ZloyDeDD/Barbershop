@@ -1102,13 +1102,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
-    
-    
     display: flex;
-    
     flex-wrap: wrap;
-    
-    
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
